@@ -1,6 +1,7 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todolist');
 const comItem = document.querySelector('.complete');
+// const clearBtn = document.getElementById("clear");
 
 
 const generateListe = todo => {
@@ -16,10 +17,27 @@ list.addEventListener('click', e => {
   }
 });
 
+// clearBtn.addEventListener("click", clearAllTodos);
+// function clearAllTodos(e){
+//   myList.innerHTML = "";
+// }
+list.addEventListener('click', e => {
+  if (e.target.classList.contains('delete')) {
+    e.target.parentElement.remove();
+  }
+});
+
 list.addEventListener('click', e => {
   if (e.target.classList.contains("complete")) {
     (e.target.parentElement).style.textDecoration = 'line-through';
+  
   }
+});
+list.addEventListener('click', e => {
+  if (e.target.className("complete").parentElement.style.textDecoration == 'line-through') {
+    (e.target.parentElement).style.textDecoration = 'none';
+  
+  } 
 });
 
 addForm.addEventListener('submit', e => {
