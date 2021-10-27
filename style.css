@@ -15,8 +15,7 @@ h1{
     min-width: 576px;
     margin: 0px auto;
 }
-.form-control,
-input:focus {
+.form-control{
     border: none;
     font-size: 2rem;
     height:5rem ;
@@ -25,7 +24,7 @@ input:focus {
     margin-top: 40px;
     border-radius: 30px;
     width: 90%; 
-    background-color: ghostwhite ;
+    background-color: rgb(165, 166, 229) ;
 }
 
 .add{
@@ -69,9 +68,7 @@ input:focus {
 .todolist{
     padding-left: 0;
 }
-  /* .filtered {
-    display: none !important;
-  } */
+
 .footer,
 .ial{   
     padding: 40px;   
@@ -92,6 +89,4 @@ input:focus {
     font-size: 1.5rem;
     border-radius: 30px;
     font-weight: bolder;
-    
-
 }
