@@ -8,7 +8,7 @@ body {
 }
 h1{
     font-size: 50px;
-    padding: 50px 0px;
+    padding: 30px 0px;
     text-align: center;   
 }
 .container {
@@ -27,7 +27,6 @@ input:focus {
     width: 90%; 
     background-color: ghostwhite ;
 }
-
 
 .add{
     text-align: center;
@@ -48,38 +47,6 @@ input:focus {
     background-color: #959de2;
 }
 
-
-/* .deleteBtn:hover{
-    background-color: rgb(211, 101, 97);
-    color: antiquewhite;
-}
-.checkBtn:hover{
-    background-color: rgb(168, 233, 184);
-    color: white;
-} */
-
-/* #clear{
-    margin: 5px;
-    padding: 5px;
-    border:none;
-    background-color: rgb(247, 188, 188);
-    color: cadetblue;
-    box-shadow: 1px 5px 6px rgb(54, 54, 54);
-    border-radius: 2rem;
-    outline: none;
-    cursor: pointer;
-    width: 90%;
-} */
-
-/* .myList__Item:hover{
-    background-color: rgb(247, 208, 149);
-    box-shadow: 1px 5px 6px rgb(145, 142, 142);
-}
-.myList__Item-second:hover{
-    background-color: rgb(190, 231, 201);
-    box-shadow: 1px 5px 6px rgb(145, 142, 142);
-} */
-
 .list-item{
     background: #EFE526;
     height: 4rem;    
@@ -93,8 +60,10 @@ input:focus {
     border: 2px solid #352f5b;
     border-radius: 20px;
 }
+
 .delete,
-.complete {
+.complete,
+.clearall {
     cursor: pointer;
 }
 .todolist{
@@ -105,12 +74,24 @@ input:focus {
   } */
 .footer,
 .ial{   
-    padding: 40px;
-   
+    padding: 40px;   
     color: #ffffff;
     text-align: center;
     border-top: 3px solid #EFE526;
     font-size: 15px;
-    background-color: ;
 }
+.clearall{
+    height: 4rem;    
+    color: #352f5b;
+    background-color: #EFE526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    font-weight: bolder;
+    
 
+}
