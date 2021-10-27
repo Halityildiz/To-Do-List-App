@@ -1,6 +1,7 @@
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todolist');
 const comItem = document.querySelector('.complete');
+const clearAll = document.querySelector(".clearall");
 
 
 const generateListe = todo => {
@@ -16,9 +17,18 @@ list.addEventListener('click', e => {
   }
 });
 
+clearAll.addEventListener('click', e => {
+  if (e.target.classList.contains('clearall')) {
+    if (confirm('Hepsini siliyorum emin misin?'))
+      list.innerHTML = "";
+  }
+});
+
 list.addEventListener('click', e => {
   if (e.target.classList.contains("complete")) {
-    (e.target.parentElement).style.textDecoration = 'line-through';
+    if ((e.target.parentElement).style.textDecoration != 'line-through')
+      (e.target.parentElement).style.textDecoration = 'line-through';
+    else (e.target.parentElement).style.textDecoration = 'none';
   }
 });
 
